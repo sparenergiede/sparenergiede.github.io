@@ -515,7 +515,21 @@
     font-size: 1.4rem;
     color: white;
   }
-</style>
+
+@media (max-width: 768px) {
+    .maxi-intro-grid {
+      grid-template-columns: 1fr !important;
+      text-align: center;
+    }
+    .maxi-intro-grid img {
+      width: min(200px, 60vw) !important;
+      margin: 0 auto;
+    }
+    .maxi-intro-grid .tags {
+      justify-content: center;
+    }
+  }
+  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
@@ -631,7 +645,7 @@
 
 <!-- MAXI INTRO -->
 <section style="background:#F5F5F5; padding:4rem 2rem;">
-  <div style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 2fr; gap:3rem; align-items:center;">
+ <div class="maxi-intro-grid" style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 2fr; gap:3rem; align-items:center;">
     
     <!-- MAXI IMAGE PLACEHOLDER -->
     <div style="display:flex; justify-content:center; align-items:center;">
@@ -650,7 +664,7 @@
       <p style="font-size:1.05rem; color:#555; line-height:1.8; font-weight:500; margin-bottom:1rem;" data-lang="en">I help you find the best energy plan. Free, no commitment and without any stress. Markus takes care of everything personally and I make sure you never overpay!</p>
       <p style="font-size:1.05rem; color:#555; line-height:1.8; font-weight:500; margin-bottom:1rem;" data-lang="es">Te ayudo a encontrar la mejor tarifa de energía. Gratis, sin compromiso y sin estrés. Markus se encarga de todo personalmente y yo me aseguro de que no pagues de más!</p>
 
-      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:0.5rem;">
+      <div class="tags" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:0.5rem;">
         <span style="background:#EAF5EE; border:1px solid #7BAF8E; color:#1A6B3C; padding:6px 14px; border-radius:20px; font-size:13px; font-weight:600;">✓ <span data-lang="de" class="inline-lang">Kostenlos</span><span data-lang="en" class="inline-lang">Free</span><span data-lang="es" class="inline-lang">Gratis</span></span>
         <span style="background:#EAF5EE; border:1px solid #7BAF8E; color:#1A6B3C; padding:6px 14px; border-radius:20px; font-size:13px; font-weight:600;">✓ <span data-lang="de" class="inline-lang">Unverbindlich</span><span data-lang="en" class="inline-lang">No commitment</span><span data-lang="es" class="inline-lang">Sin compromiso</span></span>
         <span style="background:#EAF5EE; border:1px solid #7BAF8E; color:#1A6B3C; padding:6px 14px; border-radius:20px; font-size:13px; font-weight:600;">✓ <span data-lang="de" class="inline-lang">Persönlich</span><span data-lang="en" class="inline-lang">Personal</span><span data-lang="es" class="inline-lang">Personal</span></span>
