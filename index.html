@@ -3,10 +3,103 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SparEnergie - Markus Hadelko</title>
-  <meta name="description" content="Strom und Gas günstiger, kostenlos, unverbindlich und persönlich. Partner von TeleSon."/>
+
+  <!-- ══ SEO PRIMARIO ══ -->
+  <title>SparEnergie – Strom & Gas günstiger | Markus Hadelko · TeleSon Partner</title>
+  <meta name="description" content="Strom und Gas in Deutschland günstiger – kostenlos, unverbindlich und persönlich. Markus Hadelko, zertifizierter Energieberater und offizieller TeleSon-Partner, vergleicht Tarife auf Deutsch, Englisch und Spanisch. Jetzt anfragen!"/>
+  <meta name="keywords" content="Strom sparen, Gas günstig, Energieberater Deutschland, Tarifvergleich, TeleSon, Markus Hadelko, Energieberatung Emmendingen, Strom wechseln, Gasanbieter wechseln, SparEnergie"/>
+  <meta name="author" content="Markus Hadelko"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://sparenergie.de/"/>
+
+  <!-- ══ OPEN GRAPH (Facebook / WhatsApp / LinkedIn preview) ══ -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://sparenergie.de/"/>
+  <meta property="og:title" content="SparEnergie – Strom & Gas günstiger mit Markus Hadelko"/>
+  <meta property="og:description" content="Kostenloser Tarifvergleich für Strom und Gas in Deutschland. Persönliche Beratung auf Deutsch, Englisch und Spanisch. Jetzt anfragen – unverbindlich!"/>
+  <meta property="og:image" content="https://sparenergie.de/Images/og-preview.jpg"/>
+  <meta property="og:locale" content="de_DE"/>
+  <meta property="og:locale:alternate" content="en_GB"/>
+  <meta property="og:locale:alternate" content="es_ES"/>
+  <meta property="og:site_name" content="SparEnergie"/>
+
+  <!-- ══ TWITTER CARD ══ -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="SparEnergie – Strom & Gas günstiger"/>
+  <meta name="twitter:description" content="Kostenloser Tarifvergleich. Persönliche Beratung auf Deutsch, Englisch & Spanisch."/>
+  <meta name="twitter:image" content="https://sparenergie.de/Images/og-preview.jpg"/>
+
+  <!-- ══ GEO / LOCAL SEO ══ -->
+  <meta name="geo.region" content="DE-BW"/>
+  <meta name="geo.placename" content="Emmendingen"/>
+  <meta name="geo.position" content="48.1210;7.8498"/>
+  <meta name="ICBM" content="48.1210, 7.8498"/>
+
+  <!-- ══ STRUCTURED DATA – LocalBusiness ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SparEnergie – Markus Hadelko Energieberatung",
+    "description": "Kostenloser und unverbindlicher Energietarifvergleich für Strom und Gas in Deutschland. Persönliche Beratung auf Deutsch, Englisch und Spanisch.",
+    "url": "https://sparenergie.de",
+    "telephone": "+4917623395458",
+    "email": "markus.hadelko@teleson-vetrieb.de",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Emmendingen",
+      "addressRegion": "Baden-Württemberg",
+      "addressCountry": "DE"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Germany"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Markus Hadelko",
+      "jobTitle": "Unabhängiger Energieberater",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "TeleSon Vertriebs GmbH"
+      }
+    },
+    "serviceType": ["Energieberatung", "Stromtarifvergleich", "Gastarifvergleich"],
+    "priceRange": "Kostenlos",
+    "openingHours": "Mo-Fr 08:00-20:00",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- ══ STRUCTURED DATA – FAQPage ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was kostet die Energieberatung?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Die Beratung und der Tarifvergleich sind vollständig kostenlos und unverbindlich." }
+      },
+      {
+        "@type": "Question",
+        "name": "Muss ich meinen Vertrag selbst kündigen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Nein. Wir erledigen den kompletten Wechsel für Sie, ohne Unterbrechung der Versorgung." }
+      },
+      {
+        "@type": "Question",
+        "name": "In welchen Sprachen wird beraten?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Markus Hadelko berät auf Deutsch, Englisch und Spanisch." }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
   <style>
     :root {
       --navy: #1A3C5E;
@@ -20,7 +113,6 @@
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -113,9 +205,7 @@
       margin-bottom: 1.2rem;
     }
 
-    .hero-text h1 span {
-      color: var(--yellow);
-    }
+    .hero-text h1 span { color: var(--yellow); }
 
     .hero-text p {
       font-size: clamp(1rem, 2vw, 1.15rem);
@@ -125,11 +215,7 @@
       font-weight: 500;
     }
 
-    .hero-cta {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
+    .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
 
     .btn-primary {
       background: var(--yellow);
@@ -147,10 +233,7 @@
       box-shadow: 0 4px 20px rgba(245,200,66,0.35);
     }
 
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 28px rgba(245,200,66,0.45);
-    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(245,200,66,0.45); }
 
     .btn-secondary {
       background: transparent;
@@ -165,36 +248,16 @@
       transition: all 0.2s;
     }
 
-    .btn-secondary:hover {
-      border-color: var(--white);
-      background: rgba(255,255,255,0.1);
-    }
+    .btn-secondary:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
 
-    /* Maxi SVG in hero */
-    .hero-mascot {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero-mascot svg {
-      width: min(340px, 85vw);
-      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
-      animation: float 4s ease-in-out infinite;
-    }
+    .hero-mascot { display: flex; justify-content: center; align-items: center; }
 
     @keyframes float {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-12px); }
     }
 
-    /* ── LANG BADGES ── */
-    .lang-badges {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 1.4rem;
-      flex-wrap: wrap;
-    }
+    .lang-badges { display: flex; gap: 8px; margin-bottom: 1.4rem; flex-wrap: wrap; }
 
     .badge {
       background: rgba(123,175,142,0.2);
@@ -219,14 +282,9 @@
     .partner-strip strong { color: var(--navy); }
 
     /* ── SECTION ── */
-    section {
-      padding: 5rem 2rem;
-    }
+    section { padding: 5rem 2rem; }
 
-    .section-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
 
     .section-tag {
       display: inline-block;
@@ -273,13 +331,9 @@
       border-radius: 20px;
       border: 2px solid var(--light);
       transition: border-color 0.2s, transform 0.2s;
-      position: relative;
     }
 
-    .step:hover {
-      border-color: var(--green);
-      transform: translateY(-4px);
-    }
+    .step:hover { border-color: var(--green); transform: translateY(-4px); }
 
     .step-num {
       width: 48px; height: 48px;
@@ -305,15 +359,10 @@
       font-size: 1.05rem;
     }
 
-    .step p {
-      font-size: 0.92rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
+    .step p { font-size: 0.92rem; color: var(--muted); line-height: 1.6; }
 
     /* ── PILLARS ── */
     .pillars-section { background: var(--navy); }
-
     .pillars-section .section-title { color: var(--white); }
     .pillars-section .section-sub { color: rgba(255,255,255,0.7); }
 
@@ -334,7 +383,7 @@
 
     .pillar:hover { background: rgba(255,255,255,0.12); }
 
-    .pillar-icon { color: white;
+    .pillar-icon {
       width: 52px; height: 52px;
       border-radius: 14px;
       display: flex;
@@ -342,6 +391,7 @@
       justify-content: center;
       font-size: 1.6rem;
       margin-bottom: 1rem;
+      color: white;
     }
 
     .pillar h3 {
@@ -352,11 +402,7 @@
       font-size: 1.05rem;
     }
 
-    .pillar p {
-      font-size: 0.92rem;
-      color: rgba(255,255,255,0.65);
-      line-height: 1.6;
-    }
+    .pillar p { font-size: 0.92rem; color: rgba(255,255,255,0.65); line-height: 1.6; }
 
     /* ── LANGUAGES ── */
     .lang-section { background: var(--light); }
@@ -376,7 +422,6 @@
       box-shadow: 0 2px 20px rgba(0,0,0,0.05);
     }
 
-    .lang-card .flag { font-size: 2rem; margin-bottom: 0.8rem; }
     .lang-card h3 {
       font-family: 'Nunito', sans-serif;
       font-weight: 800;
@@ -384,11 +429,125 @@
       margin-bottom: 0.6rem;
     }
 
-    .lang-card p {
-      font-size: 0.95rem;
+    .lang-card p { font-size: 0.95rem; color: var(--muted); line-height: 1.7; font-style: italic; }
+
+    /* ══════════════════════════════════════
+       MINI BIOGRAFIE – MARKUS
+    ══════════════════════════════════════ */
+    .bio-section {
+      background: var(--white);
+      padding: 3.5rem 2rem;
+    }
+
+    .bio-card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #f8fbff 0%, #eef4fa 100%);
+      border: 1.5px solid rgba(26,60,94,0.1);
+      border-radius: 24px;
+      padding: 2.2rem 2.5rem;
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      box-shadow: 0 4px 24px rgba(26,60,94,0.07);
+    }
+
+    .bio-photo {
+      flex-shrink: 0;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid var(--yellow);
+      object-fit: cover;
+      background: #dde8f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .bio-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .bio-photo-placeholder {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid var(--yellow);
+      background: linear-gradient(135deg, #1A3C5E, #2A5080);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 2.2rem;
+      color: var(--yellow);
+    }
+
+    .bio-content { flex: 1; }
+
+    .bio-name-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .bio-name {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 1.15rem;
+      color: var(--navy);
+    }
+
+    .bio-verified {
+      background: #EAF5EE;
+      border: 1px solid var(--green);
+      color: #1A6B3C;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .bio-title {
+      font-size: 0.88rem;
       color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+    }
+
+    .bio-text {
+      font-size: 0.93rem;
+      color: #444;
       line-height: 1.7;
-      font-style: italic;
+      margin-bottom: 0.9rem;
+      font-weight: 500;
+    }
+
+    .bio-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .bio-tag {
+      background: rgba(26,60,94,0.08);
+      color: var(--navy);
+      padding: 3px 11px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 5px;
     }
 
     /* ── CONTACT ── */
@@ -429,12 +588,7 @@
       font-weight: 500;
     }
 
-    .contact-buttons {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+    .contact-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
     .whatsapp-btn {
       background: #25D366;
@@ -452,10 +606,7 @@
       box-shadow: 0 4px 20px rgba(37,211,102,0.35);
     }
 
-    .whatsapp-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 28px rgba(37,211,102,0.45);
-    }
+    .whatsapp-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(37,211,102,0.45); }
 
     .email-btn {
       background: var(--yellow);
@@ -474,6 +625,216 @@
 
     .email-btn:hover { transform: translateY(-2px); }
 
+    /* ══════════════════════════════════════
+       FORMULARIO DE CONTACTO
+    ══════════════════════════════════════ */
+    .form-section {
+      background: var(--light);
+      padding: 5rem 2rem;
+    }
+
+    .form-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .form-card {
+      background: var(--white);
+      border-radius: 24px;
+      padding: 2.5rem;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.07);
+      margin-top: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.3rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e8e8e8;
+      border-radius: 12px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.98rem;
+      font-weight: 500;
+      color: var(--text);
+      background: var(--white);
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--navy);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 100px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .form-submit-btn {
+      width: 100%;
+      background: var(--yellow);
+      color: var(--navy);
+      padding: 15px 28px;
+      border: none;
+      border-radius: 50px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 1.05rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(245,200,66,0.35);
+      margin-top: 0.5rem;
+    }
+
+    .form-submit-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(245,200,66,0.45); }
+
+    /* CONTADOR */
+    .form-counter {
+      text-align: center;
+      margin-top: 1.5rem;
+      padding: 14px 20px;
+      background: linear-gradient(135deg, var(--navy), #2A5080);
+      border-radius: 14px;
+      color: white;
+    }
+
+    .form-counter-number {
+      font-family: 'Nunito', sans-serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--yellow);
+      display: block;
+      line-height: 1;
+    }
+
+    .form-counter-label {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.75);
+      font-weight: 600;
+      margin-top: 4px;
+      display: block;
+    }
+
+    /* Mensaje de éxito */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .form-success .success-icon {
+      font-size: 3rem;
+      color: var(--green);
+      margin-bottom: 1rem;
+    }
+
+    .form-success h4 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-success p { font-size: 0.95rem; color: var(--muted); font-weight: 500; }
+
+    /* ══════════════════════════════════════
+       WHATSAPP FLOTANTE
+    ══════════════════════════════════════ */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      left: 24px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .wa-float-bubble {
+      background: var(--white);
+      border: 1.5px solid #e0e0e0;
+      border-radius: 16px 16px 16px 4px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--navy);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      opacity: 0;
+      transform: translateY(6px);
+      animation: bubbleIn 0.4s 1.8s ease forwards;
+      white-space: nowrap;
+      max-width: 200px;
+    }
+
+    @keyframes bubbleIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .wa-float-btn {
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+      transition: transform 0.2s, box-shadow 0.2s;
+      animation: waPop 0.5s 1s cubic-bezier(0.34,1.56,0.64,1) both;
+    }
+
+    @keyframes waPop {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .wa-float-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 30px rgba(37,211,102,0.55);
+    }
+
+    .wa-float-btn i { font-size: 1.8rem; color: white; }
+
+    /* Pulse ring */
+    .wa-float-btn::after {
+      content: '';
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      opacity: 0.35;
+      animation: waPulse 2.5s ease-out 2s infinite;
+    }
+
+    @keyframes waPulse {
+      0% { transform: scale(1); opacity: 0.35; }
+      100% { transform: scale(1.9); opacity: 0; }
+    }
+
     /* ── FOOTER ── */
     footer {
       background: var(--navy);
@@ -487,99 +848,90 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
-      .hero-inner {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 2rem;
-      }
+      .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
       .hero-mascot { order: -1; }
       .lang-badges { justify-content: center; }
       .hero-cta { justify-content: center; }
       .contact-box { padding: 2rem 1.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .bio-card { flex-direction: column; align-items: center; text-align: center; padding: 1.8rem; }
+      .bio-tags { justify-content: center; }
+      .contact-section .section-inner > div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
+      .form-card > div > div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
     }
 
-    /* ── HIDDEN CLASS for i18n ── */
+    /* ── i18n ── */
     [data-lang] { display: none; }
     [data-lang].active { display: block; }
     .inline-lang { display: none; }
     .inline-lang.active { display: inline; }
-    .fa-solid, .fa-regular, .fa-brands {
-    font-style: normal;
-  }
-  .step-icon .fa-solid,
-  .step-icon .fa-regular {
-    font-size: 2rem;
-    color: var(--navy);
-  }
-  .pillar-icon .fa-solid {
-    font-size: 1.4rem;
-    color: white;
-  }
-
-@media (max-width: 768px) {
-    .maxi-intro-grid {
-      grid-template-columns: 1fr !important;
-      text-align: center;
-    }
-    .maxi-intro-grid img {
-      width: min(200px, 60vw) !important;
-      margin: 0 auto;
-    }
-    .maxi-intro-grid .tags {
-      justify-content: center;
-    }
-  }
+    .fa-solid, .fa-regular, .fa-brands { font-style: normal; }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
-<!-- LANGUAGE BAR -->
-<div class="lang-bar">
-  <button class="lang-btn active" onclick="setLang('de')">DE</button>
-  <button class="lang-btn" onclick="setLang('en')">EN</button>
-  <button class="lang-btn" onclick="setLang('es')">ES</button>
+<!-- ══ WHATSAPP FLOTANTE (inferior izquierdo) ══ -->
+<div class="wa-float" role="complementary" aria-label="WhatsApp Kontakt">
+  <div class="wa-float-bubble">
+    <span data-lang="de" class="inline-lang active">💬 Schreib uns!</span>
+    <span data-lang="en" class="inline-lang">💬 Message us!</span>
+    <span data-lang="es" class="inline-lang">💬 ¡Escríbenos!</span>
+  </div>
+  <a href="https://wa.me/4917623395458" class="wa-float-btn" target="_blank" rel="noopener" 
+     aria-label="WhatsApp Markus Hadelko" title="WhatsApp Markus Hadelko">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 </div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-text">
+<!-- LANGUAGE BAR -->
+<div class="lang-bar" role="navigation" aria-label="Sprachauswahl">
+  <button class="lang-btn active" onclick="setLang('de', event)">DE</button>
+  <button class="lang-btn" onclick="setLang('en', event)">EN</button>
+  <button class="lang-btn" onclick="setLang('es', event)">ES</button>
+</div>
 
-      <h1 data-lang="de" class="active">
-        Mehr Energie <br/><span>Weniger Kosten.</span>
-      </h1>
-      <h1 data-lang="en">
-        More Energy <br/><span>Less costs.</span>
-      </h1>
-      <h1 data-lang="es">
-        Más energía <br/><span>Menos costo.</span>
-      </h1>
+<!-- ════════════ HERO ════════════ -->
+<header>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 data-lang="de" class="active">Mehr Energie <br/><span>Weniger Kosten.</span></h1>
+        <h1 data-lang="en">More Energy <br/><span>Less costs.</span></h1>
+        <h1 data-lang="es">Más energía <br/><span>Menos costo.</span></h1>
 
-      <p data-lang="de" class="active">
-        Viele zahlen in Deutschland mehr als nötig für Strom und Gas. Wir schauen uns Ihren Tarif gemeinsam an und helfen Ihnen beim Wechsel, wenn wir etwas Besseres finden.
-      </p>
-      <p data-lang="en">
-        Many of us overpay for energy in Germany without knowing it. We review your plan together and help you switch if we find something better.
-      </p>
-      <p data-lang="es">
-        Muchos pagamos de más por la luz y el gas en Alemania sin saberlo. Revisamos tu tarifa contigo y, si encontramos algo mejor, te ayudamos a cambiarte.
-      </p>
+        <p data-lang="de" class="active">Viele zahlen in Deutschland mehr als nötig für Strom und Gas. Wir schauen uns Ihren Tarif gemeinsam an und helfen Ihnen beim Wechsel, wenn wir etwas Besseres finden.</p>
+        <p data-lang="en">Many of us overpay for energy in Germany without knowing it. We review your plan together and help you switch if we find something better.</p>
+        <p data-lang="es">Muchos pagamos de más por la luz y el gas en Alemania sin saberlo. Revisamos tu tarifa contigo y, si encontramos algo mejor, te ayudamos a cambiarte.</p>
 
-      <div class="hero-cta">
-        <a href="#contact" class="btn-primary">
-          <i class="fa-regular fa-comment"></i> <span data-lang="de" class="inline-lang active">Jetzt anfragen</span><span data-lang="en" class="inline-lang">Get in touch</span><span data-lang="es" class="inline-lang">Contáctanos</span>
-        </a>
-        <a href="#how" class="btn-secondary">
-          <span data-lang="de" class="inline-lang active">Wie funktioniert es?</span><span data-lang="en" class="inline-lang">How does it work?</span><span data-lang="es" class="inline-lang">¿Cómo funciona?</span>
-        </a>
+        <div class="hero-cta">
+          <a href="#formular" class="btn-primary">
+            <i class="fa-regular fa-comment"></i>
+            <span data-lang="de" class="inline-lang active">Jetzt anfragen</span>
+            <span data-lang="en" class="inline-lang">Get in touch</span>
+            <span data-lang="es" class="inline-lang">Contáctanos</span>
+          </a>
+          <a href="#how" class="btn-secondary">
+            <span data-lang="de" class="inline-lang active">Wie funktioniert es?</span>
+            <span data-lang="en" class="inline-lang">How does it work?</span>
+            <span data-lang="es" class="inline-lang">¿Cómo funciona?</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-mascot">
+        <img src="Images/SparEnergieLogo.png" 
+             alt="SparEnergie Logo – Markus Hadelko Energieberatung" 
+             width="480" height="480"
+             style="width:min(480px,85vw); filter:drop-shadow(0 20px 40px rgba(0,0,0,0.3)); animation:float 4s ease-in-out infinite;"
+             loading="eager"/>
       </div>
     </div>
-
-    <div class="hero-mascot">
-    <img src="Images/SparEnergieLogo.png" alt="SparEnergie Logo" style="width:min(480px,85vw); filter:drop-shadow(0 20px 40px rgba(0,0,0,0.3)); animation:float 4s ease-in-out infinite;"/>  
-  </div>
-</section>
+  </section>
+</header>
 
 <!-- PARTNER STRIP -->
 <div class="partner-strip">
@@ -589,36 +941,37 @@
   <strong> TeleSon Vertriebs GmbH</strong>
   <span data-lang="de" class="inline-lang active">· Kunden deutschlandweit!</span>
   <span data-lang="en" class="inline-lang">· Customers across Germany!</span>
-  <span data-lang="es" class="inline-lang">· Clientes en toda Alemania!</span>
+  <span data-lang="es" class="inline-lang">· ¡Clientes en toda Alemania!</span>
 </div>
 
-<!-- HOW IT WORKS -->
-<section id="how">
+<!-- ════════════ HOW IT WORKS ════════════ -->
+<main>
+<section id="how" aria-labelledby="how-title">
   <div class="section-inner">
     <span class="section-tag" data-lang="de">Wie es funktioniert</span>
     <span class="section-tag" data-lang="en">How it works</span>
     <span class="section-tag" data-lang="es">Cómo funciona</span>
 
-    <h2 class="section-title" data-lang="de">In 3 Schritten zum besseren Tarif</h2>
+    <h2 class="section-title" id="how-title" data-lang="de">In 3 Schritten zum besseren Tarif</h2>
     <h2 class="section-title" data-lang="en">3 steps to a better energy deal</h2>
     <h2 class="section-title" data-lang="es">3 pasos para pagar menos por energía</h2>
 
-    <p class="section-sub" data-lang="de">Kein Stress, kein Papierkram, wir kümmern uns um alles. </p>
-    <p class="section-sub" data-lang="en">No stress, no paperwork, we handle everything. </p>
-    <p class="section-sub" data-lang="es">Sin estrés, sin papeleos, nosotros nos encargamos de todo. </p>
+    <p class="section-sub" data-lang="de">Kein Stress, kein Papierkram, wir kümmern uns um alles.</p>
+    <p class="section-sub" data-lang="en">No stress, no paperwork, we handle everything.</p>
+    <p class="section-sub" data-lang="es">Sin estrés, sin papeleos, nosotros nos encargamos de todo.</p>
 
     <div class="steps">
-      <div class="step">
+      <article class="step">
         <div class="step-num">1</div>
         <div class="step-icon"><i class="fa-regular fa-file-lines"></i></div>
         <h3 data-lang="de">Kurzes Gespräch</h3>
         <h3 data-lang="en">Quick chat</h3>
         <h3 data-lang="es">Conversación rápida</h3>
         <p data-lang="de">Wir benötigen Ihre aktuelle Stromrechnung oder Ihren jährlichen Verbrauch in kWh.</p>
-        <p data-lang="en">Share your current bill or meter number with us - that's all we need.</p>
+        <p data-lang="en">Share your current bill or meter number with us – that's all we need.</p>
         <p data-lang="es">Necesitamos tu factura de energía actual o tu consumo anual estimado en kWh.</p>
-      </div>
-      <div class="step">
+      </article>
+      <article class="step">
         <div class="step-num">2</div>
         <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
         <h3 data-lang="de">Wir vergleichen</h3>
@@ -626,9 +979,9 @@
         <h3 data-lang="es">Comparamos</h3>
         <p data-lang="de">Aus einem Pool verschiedener Energieanbieter wählen wir den besten Tarif für Sie. Unabhängig, günstig und transparent.</p>
         <p data-lang="en">From a pool of different energy suppliers we pick the best plan for you. Independent, cost-effective and transparent.</p>
-        <p data-lang="es">De un grupo de proveedores de energía elegimos el mejor plan para ti. Independiente, accesible y transparente.</p>
-      </div>
-      <div class="step">
+        <p data-lang="es">De un grupo de proveedores elegimos el mejor plan para ti. Independiente, accesible y transparente.</p>
+      </article>
+      <article class="step">
         <div class="step-num">3</div>
         <div class="step-icon"><i class="fa-solid fa-circle-check"></i></div>
         <h3 data-lang="de">Sie sparen</h3>
@@ -636,98 +989,85 @@
         <h3 data-lang="es">Ahorras</h3>
         <p data-lang="de">Wir erledigen den Wechsel komplett. Sie zahlen weniger, ohne Unterbrechung der Versorgung.</p>
         <p data-lang="en">We handle the switch completely. You pay less, with no interruption to your supply.</p>
-        <p data-lang="es">Nostros gestionamos el cambio por completo. Pagas menos, sin ninguna interrupción del suministro.</p>
-      </div>
+        <p data-lang="es">Gestionamos el cambio por completo. Pagas menos, sin ninguna interrupción del suministro.</p>
+      </article>
     </div>
   </div>
 </section>
 
-
-<!-- MAXI INTRO -->
-<section style="background:#F5F5F5; padding:4rem 2rem;">
- <div class="maxi-intro-grid" style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 2fr; gap:3rem; align-items:center;">
-    
-    <!-- MAXI IMAGE PLACEHOLDER -->
+<!-- ════════════ MAXI INTRO ════════════ -->
+<section style="background:#F5F5F5; padding:4rem 2rem;" aria-label="Maxi, der SparIgel">
+  <div style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 2fr; gap:3rem; align-items:center;">
     <div style="display:flex; justify-content:center; align-items:center;">
-      <img src="Images/maxi_standing.png" alt="Maxi vom Schwarzwald" style="width:min(260px,80vw);"/>
+      <img src="Images/maxi_standing.png" alt="Maxi der SparIgel – SparEnergie Maskottchen" 
+           style="width:min(260px,80vw); height:auto;" loading="lazy"/>
     </div>
-
-    <!-- TEXT -->
     <div>
       <span style="display:inline-block; background:#F5C842; color:#1A3C5E; padding:4px 14px; border-radius:20px; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:1rem;">Maxi</span>
 
       <h2 style="font-family:Nunito,sans-serif; font-size:clamp(1.6rem,3vw,2.2rem); font-weight:900; color:#1A3C5E; margin-bottom:1rem; line-height:1.2;" data-lang="de">Hallo! Ich bin Maxi, euer SparIgel.</h2>
-      <h2 style="font-family:Nunito,sans-serif; font-size:clamp(1.6rem,3vw,2.2rem); font-weight:900; color:#1A3C5E; margin-bottom:1rem; line-height:1.2;" data-lang="en">Hi! I am Maxi,  your budget-friendly energy hedgehog.</h2>
-      <h2 style="font-family:Nunito,sans-serif; font-size:clamp(1.6rem,3vw,2.2rem); font-weight:900; color:#1A3C5E; margin-bottom:1rem; line-height:1.2;" data-lang="es">Hola! Soy Maxi, tu erizo ahorrador de facturas de luz y gas.</h2>
+      <h2 style="font-family:Nunito,sans-serif; font-size:clamp(1.6rem,3vw,2.2rem); font-weight:900; color:#1A3C5E; margin-bottom:1rem; line-height:1.2;" data-lang="en">Hi! I am Maxi, your budget-friendly energy hedgehog.</h2>
+      <h2 style="font-family:Nunito,sans-serif; font-size:clamp(1.6rem,3vw,2.2rem); font-weight:900; color:#1A3C5E; margin-bottom:1rem; line-height:1.2;" data-lang="es">¡Hola! Soy Maxi, tu erizo ahorrador de facturas.</h2>
 
       <p style="font-size:1.05rem; color:#555; line-height:1.8; font-weight:500; margin-bottom:1rem;" data-lang="de">Ich helfe euch, den besten Energietarif zu finden. Kostenlos, unverbindlich und ohne Stress. Markus kümmert sich persönlich um alles und ich passe auf, dass ihr nicht zu viel zahlt!</p>
       <p style="font-size:1.05rem; color:#555; line-height:1.8; font-weight:500; margin-bottom:1rem;" data-lang="en">I help you find the best energy plan. Free, no commitment and without any stress. Markus takes care of everything personally and I make sure you never overpay!</p>
-      <p style="font-size:1.05rem; color:#555; line-height:1.8; font-weight:500; margin-bottom:1rem;" data-lang="es">Te ayudo a encontrar la mejor tarifa de energía. Gratis, sin compromiso y sin estrés. Markus se encarga de todo personalmente y yo me aseguro de que no pagues de más!</p>
+      <p style="font-size:1.05rem; color:#555; line-height:1.8; font-weight:500; margin-bottom:1rem;" data-lang="es">Te ayudo a encontrar la mejor tarifa de energía. Gratis, sin compromiso y sin estrés. ¡Markus se encarga de todo y yo me aseguro de que no pagues de más!</p>
 
-      <div class="tags" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:0.5rem;">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:0.5rem;">
         <span style="background:#EAF5EE; border:1px solid #7BAF8E; color:#1A6B3C; padding:6px 14px; border-radius:20px; font-size:13px; font-weight:600;">✓ <span data-lang="de" class="inline-lang">Kostenlos</span><span data-lang="en" class="inline-lang">Free</span><span data-lang="es" class="inline-lang">Gratis</span></span>
         <span style="background:#EAF5EE; border:1px solid #7BAF8E; color:#1A6B3C; padding:6px 14px; border-radius:20px; font-size:13px; font-weight:600;">✓ <span data-lang="de" class="inline-lang">Unverbindlich</span><span data-lang="en" class="inline-lang">No commitment</span><span data-lang="es" class="inline-lang">Sin compromiso</span></span>
         <span style="background:#EAF5EE; border:1px solid #7BAF8E; color:#1A6B3C; padding:6px 14px; border-radius:20px; font-size:13px; font-weight:600;">✓ <span data-lang="de" class="inline-lang">Persönlich</span><span data-lang="en" class="inline-lang">Personal</span><span data-lang="es" class="inline-lang">Personal</span></span>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- PILLARS -->
-<section class="pillars-section">
+<!-- ════════════ PILLARS ════════════ -->
+<section class="pillars-section" aria-labelledby="pillars-title">
   <div class="section-inner">
     <span class="section-tag" data-lang="de">Warum wir?</span>
     <span class="section-tag" data-lang="en">Why us?</span>
-    <span class="section-tag" data-lang="es">¿¿Por qué nosotros?</span>
+    <span class="section-tag" data-lang="es">¿Por qué nosotros?</span>
 
-    <h2 class="section-title" data-lang="de">Persönlich, transparent und ohne Druck.</h2>
+    <h2 class="section-title" id="pillars-title" data-lang="de">Persönlich, transparent und ohne Druck.</h2>
     <h2 class="section-title" data-lang="en">Personal, transparent and without pressure.</h2>
     <h2 class="section-title" data-lang="es">Personal, transparente y sin presión.</h2>
 
     <div class="pillars">
-      <div class="pillar">
+      <article class="pillar">
         <div class="pillar-icon" style="background:rgba(26,107,60,0.3)"><i class="fa-solid fa-bullseye"></i></div>
-        <h3 data-lang="de">Wir lösen ein Problem</h3>
-        <h3 data-lang="en">We solve a problem</h3>
-        <h3 data-lang="es">Resolvemos un problema</h3>
+        <h3 data-lang="de">Wir lösen ein Problem</h3><h3 data-lang="en">We solve a problem</h3><h3 data-lang="es">Resolvemos un problema</h3>
         <p data-lang="de">Kein Verkaufsdruck. Wir helfen Ihnen einfach zu sparen.</p>
         <p data-lang="en">No sales pressure. We simply help you save money.</p>
         <p data-lang="es">Sin presión de venta. Simplemente te ayudamos a ahorrar.</p>
-      </div>
-      <div class="pillar">
+      </article>
+      <article class="pillar">
         <div class="pillar-icon" style="background:rgba(245,200,66,0.2)"><i class="fa-solid fa-handshake"></i></div>
-        <h3 data-lang="de">Kostenlos & unverbindlich</h3>
-        <h3 data-lang="en">Free & no commitment</h3>
-        <h3 data-lang="es">Gratis y sin compromiso</h3>
+        <h3 data-lang="de">Kostenlos & unverbindlich</h3><h3 data-lang="en">Free & no commitment</h3><h3 data-lang="es">Gratis y sin compromiso</h3>
         <p data-lang="de">Kein Risiko. Kein Papierkram. Kein Callcenter.</p>
         <p data-lang="en">No risk. No paperwork. No call center.</p>
         <p data-lang="es">Sin riesgo. Sin papeleos. Sin call center.</p>
-      </div>
-      <div class="pillar">
+      </article>
+      <article class="pillar">
         <div class="pillar-icon" style="background:rgba(123,175,142,0.3)"><i class="fa-solid fa-earth-europe"></i></div>
-        <h3 data-lang="de">Auf Deutsch, Englisch & Spanisch</h3>
-        <h3 data-lang="en">In German, English & Spanish</h3>
-        <h3 data-lang="es">En alemán, inglés y español</h3>
+        <h3 data-lang="de">Auf Deutsch, Englisch & Spanisch</h3><h3 data-lang="en">In German, English & Spanish</h3><h3 data-lang="es">En alemán, inglés y español</h3>
         <p data-lang="de">Ein echter Ansprechpartner, in Ihrer Sprache.</p>
         <p data-lang="en">A real person, in your language.</p>
         <p data-lang="es">Una persona real, en tu idioma.</p>
-      </div>
-      <div class="pillar">
+      </article>
+      <article class="pillar">
         <div class="pillar-icon" style="background:rgba(39,174,96,0.25)"><i class="fa-solid fa-leaf"></i></div>
-        <h3 data-lang="de">Ökostrom verfügbar</h3>
-        <h3 data-lang="en">Green energy available</h3>
-        <h3 data-lang="es">Energía verde disponible</h3>
+        <h3 data-lang="de">Ökostrom verfügbar</h3><h3 data-lang="en">Green energy available</h3><h3 data-lang="es">Energía verde disponible</h3>
         <p data-lang="de">Günstig und nachhaltig, wenn Sie möchten.</p>
         <p data-lang="en">Cost-effective and sustainable, for those who want it.</p>
-        <p data-lang="es">Accesible y sostenible, para quienes lo prefieran verde.</p>
-      </div>
+        <p data-lang="es">Accesible y sostenible, para quienes lo prefieran.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- LANGUAGES -->
-<section class="lang-section">
+<!-- ════════════ LANGUAGES ════════════ -->
+<section class="lang-section" aria-label="Mehrsprachige Beratung">
   <div class="section-inner">
     <span class="section-tag" data-lang="de">Mehrsprachig</span>
     <span class="section-tag" data-lang="en">Multilingual</span>
@@ -754,43 +1094,163 @@
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact-section" id="contact">
-  <div class="section-inner">
-    <span class="section-tag" data-lang="de">Kontakt</span>
-    <span class="section-tag" data-lang="en">Contact</span>
-    <span class="section-tag" data-lang="es">Contacto</span>
+<!-- ════════════ FORMULARIO DE CONTACTO ════════════ -->
+<section class="form-section" id="formular" aria-labelledby="form-title">
+  <div class="form-wrapper">
+    <span class="section-tag" data-lang="de">Kostenlose Anfrage</span>
+    <span class="section-tag" data-lang="en">Free Request</span>
+    <span class="section-tag" data-lang="es">Consulta Gratuita</span>
 
-    <h2 class="section-title" data-lang="de">Jetzt kostenlos anfragen</h2>
-    <h2 class="section-title" data-lang="en">Get your free check now</h2>
+    <h2 class="section-title" id="form-title" data-lang="de">Jetzt kostenlos anfragen</h2>
+    <h2 class="section-title" data-lang="en">Send your free request now</h2>
     <h2 class="section-title" data-lang="es">Solicita tu revisión gratuita</h2>
 
-    <div class="contact-box">
-      <h3 data-lang="de">Markus Hadelko</h3>
-      <h3 data-lang="en">Markus Hadelko</h3>
-      <h3 data-lang="es">Markus Hadelko</h3>
-      <p data-lang="de">Unabhängiger Energieberater · Partner von TeleSon · Deutschlandweit</p>
-      <p data-lang="en">Independent Energy Advisor · TeleSon Partner · All of Germany</p>
-      <p data-lang="es">Asesor Energético Independiente · Partner de TeleSon · Toda Alemania</p>
-      <div class="contact-buttons">
-        <a href="https://wa.me/4917623395458" class="whatsapp-btn">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
-        </a>
-        <a href="mailto:markus.hadelko@teleson-vetrieb.de" class="email-btn">
-          <i class="fa-regular fa-envelope"></i> <span data-lang="de" class="inline-lang active">E-Mail schreiben</span>
-          <span data-lang="en" class="inline-lang">Send email</span>
-          <span data-lang="es" class="inline-lang">Enviar email</span>
-        </a>
+    <p class="section-sub" data-lang="de">Markus meldet sich persönlich bei Ihnen – meist am selben Tag.</p>
+    <p class="section-sub" data-lang="en">Markus will personally get back to you – usually the same day.</p>
+    <p class="section-sub" data-lang="es">Markus te contactará personalmente – normalmente el mismo día.</p>
+
+    <div class="form-card">
+      <div id="formContent">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:start;">
+
+          <!-- Columna izquierda -->
+          <div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname" id="lbl-fname">Vorname *</label>
+                <input type="text" id="fname" name="fname" autocomplete="given-name" required placeholder="Max"/>
+              </div>
+              <div class="form-group">
+                <label for="lname" id="lbl-lname">Nachname *</label>
+                <input type="text" id="lname" name="lname" autocomplete="family-name" required placeholder="Mustermann"/>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" id="lbl-phone">Telefon / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+49 176 …"/>
+            </div>
+
+            <div class="form-group">
+              <label for="email" id="lbl-email">E-Mail *</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="max@beispiel.de"/>
+            </div>
+
+            <div class="form-group">
+              <label for="energytype" id="lbl-energy">Was möchten Sie prüfen? *</label>
+              <select id="energytype" name="energytype" required>
+                <option value="" disabled selected id="opt-placeholder">—</option>
+                <option value="strom" id="opt-strom">Strom</option>
+                <option value="gas" id="opt-gas">Gas</option>
+                <option value="both" id="opt-both">Strom + Gas</option>
+                <option value="energieberatung" id="opt-eb">Energieberatung</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Columna derecha -->
+          <div style="display:flex; flex-direction:column; height:100%;">
+            <div class="form-group" style="flex:1; display:flex; flex-direction:column;">
+              <label for="message" id="lbl-message">Nachricht (optional)</label>
+              <textarea id="message" name="message" style="flex:1; min-height:160px;"
+                placeholder="z.B.: Verbrauch ca. 3.500 kWh/Jahr, PLZ 79312 …"></textarea>
+            </div>
+
+            <button type="button" class="form-submit-btn" onclick="submitForm()">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span id="lbl-submit">Kostenlos anfragen</span>
+            </button>
+
+            <p style="font-size:11px; color:var(--muted); text-align:center; margin-top:0.8rem; font-weight:500;">
+              <span id="lbl-privacy">🔒 Ihre Daten werden vertraulich behandelt. Kein Spam, keine Weitergabe.</span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Mensaje de éxito -->
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h4 data-lang="de">Vielen Dank! Markus meldet sich bald.</h4>
+        <h4 data-lang="en">Thank you! Markus will be in touch soon.</h4>
+        <h4 data-lang="es">¡Gracias! Markus te contactará pronto.</h4>
+        <p data-lang="de">Wir haben Ihre Anfrage erhalten und melden uns in Kürze persönlich bei Ihnen.</p>
+        <p data-lang="en">We've received your request and will get back to you personally very soon.</p>
+        <p data-lang="es">Hemos recibido tu consulta y nos pondremos en contacto contigo personalmente muy pronto.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ════════════ BIO + KONTAKT (fusionados) ════════════ -->
+<section class="contact-section" id="contact" aria-labelledby="contact-title">
+  <div class="section-inner">
+
+    <!-- Etiqueta única -->
+    <span class="section-tag" data-lang="de">Ihr Berater &amp; Kontakt</span>
+    <span class="section-tag" data-lang="en">Your Advisor &amp; Contact</span>
+    <span class="section-tag" data-lang="es">Tu Asesor &amp; Contacto</span>
+
+    <h2 class="section-title" id="contact-title" data-lang="de" style="margin-top:0.8rem; margin-bottom:2rem;">Persönliche Beratung, der Sie vertrauen können</h2>
+    <h2 class="section-title" data-lang="en" style="margin-top:0.8rem; margin-bottom:2rem;">Personal advice you can trust</h2>
+    <h2 class="section-title" data-lang="es" style="margin-top:0.8rem; margin-bottom:2rem;">Asesoría personal en la que puedes confiar</h2>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:stretch;">
+
+      <!-- BIO -->
+      <div class="bio-card" style="margin-top:0;">
+        <img class="bio-photo" src="Images/markus-hadelko_headshot.jpg">
+        <div class="bio-content">
+          <div class="bio-name-row">
+            <span class="bio-name">Markus Hadelko</span>
+            <span class="bio-verified"><i class="fa-solid fa-circle-check" style="color:var(--green);"></i> TeleSon Partner</span>
+          </div>
+          <div class="bio-title" data-lang="de">Unabhängiger Energieberater · Deutschland</div>
+          <div class="bio-title" data-lang="en">Independent Energy Advisor · Germany</div>
+          <div class="bio-title" data-lang="es">Asesor Energético Independiente · Alemania</div>
+          <p class="bio-text" data-lang="de">Markus ist Diplom-Volkswirt und offizieller Partner von TeleSon Vertriebs GmbH. Mit langjähriger Erfahrung in Kostenoptimierung hilft er Privatpersonen und Familien deutschlandweit, unnötige Energiekosten zu vermeiden und den richtigen Tarif zu finden.</p>
+          <p class="bio-text" data-lang="en">Markus holds a degree in Economics (Diplom-Volkswirt) and is an official TeleSon partner. With years of experience in cost optimisation, he helps individuals and families across Germany avoid unnecessary energy costs and find the right plan.</p>
+          <p class="bio-text" data-lang="es">Markus es Diplom-Volkswirt (economista titulado) y socio oficial de TeleSon Vertriebs GmbH. Con amplia experiencia en optimización de costes, ayuda a particulares y familias en toda Alemania a evitar gastos innecesarios en luz y gas y a encontrar la tarifa correcta.</p>
+          <div class="bio-tags">
+            <span class="bio-tag"><i class="fa-solid fa-graduation-cap"></i> Diplom-Volkswirt</span>
+            <span class="bio-tag"><i class="fa-solid fa-briefcase"></i> TeleSon Partner</span>
+            <span class="bio-tag"><i class="fa-solid fa-location-dot"></i> Deutschland</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- KONTAKT -->
+      <div class="contact-box" style="margin-top:0; display:flex; flex-direction:column; justify-content:center;">
+        <h3>Markus Hadelko</h3>
+        <p data-lang="de">Unabhängiger Energieberater · Partner von TeleSon · Deutschlandweit</p>
+        <p data-lang="en">Independent Energy Advisor · TeleSon Partner · All of Germany</p>
+        <p data-lang="es">Asesor Energético Independiente · Partner de TeleSon · Toda Alemania</p>
+        <div class="contact-buttons">
+          <a href="https://wa.me/4917623395458" class="whatsapp-btn" rel="noopener" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="mailto:markus.hadelko@teleson-vetrieb.de" class="email-btn">
+            <i class="fa-regular fa-envelope"></i>
+            <span data-lang="de" class="inline-lang active">E-Mail schreiben</span>
+            <span data-lang="en" class="inline-lang">Send email</span>
+            <span data-lang="es" class="inline-lang">Enviar email</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ════════════ FOOTER ════════════ -->
 <footer>
   <p>© 2026 <strong>SparEnergie</strong> · Markus Hadelko Energieberatung · Partner von TeleSon Vertriebs GmbH</p>
-  <p style="margin-top:6px; margin-bottom:8px;"><a href="impressum.html" style="color:#F5C842; text-decoration:none; font-weight:600;">Impressum</a></p>
-    <p style="margin-top:6px;">Emmendingen, Deutschland · 
+  <p style="margin-top:6px; margin-bottom:8px;">
+    <a href="impressum.html" style="color:#F5C842; text-decoration:none; font-weight:600;">Impressum</a>
+  </p>
+  <p style="margin-top:6px;">Emmendingen, Deutschland ·
     <span data-lang="de" class="inline-lang active">Deutschlandweit tätig</span>
     <span data-lang="en" class="inline-lang">Serving all of Germany</span>
     <span data-lang="es" class="inline-lang">Servicio en toda Alemania</span>
@@ -798,22 +1258,124 @@
 </footer>
 
 <script>
+  /* ══ IDIOMA ══ */
   function applyLang(lang) {
     document.querySelectorAll('[data-lang]').forEach(el => {
-      el.style.display = el.getAttribute('data-lang') === lang
-        ? (el.classList.contains('inline-lang') ? 'inline' : 'block')
-        : 'none';
+      const match = el.getAttribute('data-lang') === lang;
+      if (el.classList.contains('inline-lang')) {
+        el.style.display = match ? 'inline' : 'none';
+      } else {
+        el.style.display = match ? 'block' : 'none';
+      }
     });
     document.documentElement.lang = lang;
+    currentLang = lang;
+
+    // Traducir labels del formulario
+    const formLabels = {
+      de: { fname:'Vorname *', lname:'Nachname *', phone:'Telefon / WhatsApp', email:'E-Mail *', energy:'Was möchten Sie prüfen? *', message:'Nachricht (optional)', submit:'Kostenlos anfragen', privacy:'🔒 Ihre Daten werden vertraulich behandelt. Kein Spam, keine Weitergabe.' },
+      en: { fname:'First name *', lname:'Last name *', phone:'Phone / WhatsApp', email:'Email *', energy:'What would you like to check? *', message:'Message (optional)', submit:'Send free request', privacy:'🔒 Your data is handled confidentially. No spam, no sharing.' },
+      es: { fname:'Nombre *', lname:'Apellido *', phone:'Teléfono / WhatsApp', email:'Email *', energy:'¿Qué deseas revisar? *', message:'Mensaje (opcional)', submit:'Enviar consulta gratis', privacy:'🔒 Tus datos se tratan de forma confidencial. Sin spam ni cesión a terceros.' }
+    };
+    const fl = formLabels[lang] || formLabels.de;
+    const set = (id, txt) => { const el = document.getElementById(id); if(el) el.textContent = txt; };
+    set('lbl-fname', fl.fname); set('lbl-lname', fl.lname); set('lbl-phone', fl.phone);
+    set('lbl-email', fl.email); set('lbl-energy', fl.energy); set('lbl-message', fl.message);
+    set('lbl-submit', fl.submit); set('lbl-privacy', fl.privacy);
+
+    // Actualizar opciones del select con texto limpio por idioma
+    const optTexts = {
+      de: { strom: 'Strom', gas: 'Gas', both: 'Strom + Gas', eb: 'Energieberatung' },
+      en: { strom: 'Electricity', gas: 'Gas', both: 'Electricity + Gas', eb: 'Energy Consulting' },
+      es: { strom: 'Electricidad', gas: 'Gas', both: 'Electricidad + Gas', eb: 'Asesoría Energética' }
+    };
+    const t = optTexts[lang] || optTexts.de;
+    const optStrom = document.getElementById('opt-strom');
+    const optGas   = document.getElementById('opt-gas');
+    const optBoth  = document.getElementById('opt-both');
+    const optEb    = document.getElementById('opt-eb');
+    if (optStrom) optStrom.textContent = t.strom;
+    if (optGas)   optGas.textContent   = t.gas;
+    if (optBoth)  optBoth.textContent  = t.both;
+    if (optEb)    optEb.textContent    = t.eb;
   }
 
-  function setLang(lang) {
+  let currentLang = 'de';
+
+  function setLang(lang, e) {
+    if (e) e.stopPropagation();
     document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    const btn = document.querySelector(`.lang-btn[onclick*="'${lang}'"]`);
+    if (btn) btn.classList.add('active');
     applyLang(lang);
   }
 
-  window.addEventListener('load', function() {
+  /* ══ CONTADOR ══ */
+  const COUNTER_KEY = 'sparenergie_submissions';
+
+  function getCount() {
+    return parseInt(localStorage.getItem(COUNTER_KEY) || '0', 10);
+  }
+
+  function incrementCount() {
+    const n = getCount() + 1;
+    localStorage.setItem(COUNTER_KEY, n);
+    return n;
+  }
+
+  function animateCounter(target) {
+    const el = document.getElementById('submitCounter');
+    if (!el) return;
+    const start = parseInt(el.textContent, 10) || 0;
+    const duration = 800;
+    const startTime = performance.now();
+    function update(now) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      el.textContent = Math.round(start + (target - start) * progress);
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
+
+  /* ══ FORMULARIO ══ */
+  function submitForm() {
+    const fname  = document.getElementById('fname').value.trim();
+    const lname  = document.getElementById('lname').value.trim();
+    const email  = document.getElementById('email').value.trim();
+    const phone  = document.getElementById('phone').value.trim();
+    const energy = document.getElementById('energytype').value;
+    const msg    = document.getElementById('message').value.trim();
+
+    if (!fname || !email || !energy) {
+      const msgs = {
+        de: 'Bitte füllen Sie alle Pflichtfelder aus (Name, E-Mail, Energietyp).',
+        en: 'Please fill in all required fields (name, email, energy type).',
+        es: 'Por favor completa todos los campos obligatorios (nombre, email, tipo de energía).'
+      };
+      alert(msgs[currentLang] || msgs.de);
+      return;
+    }
+
+    // Enviar silenciosamente a Google Forms
+    const FORM_ID = '1FAIpQLScCftUG_bhGznMWRN6llgW6jft49b_RU0GOOybKnkDH3muguw';
+    const formUrl = `https://docs.google.com/forms/d/e/${FORM_ID}/formResponse`;
+    const data = new FormData();
+    data.append('emailAddress',     email);
+    data.append('entry.2005620554', fname);
+    data.append('entry.139305699',  lname);
+    data.append('entry.1886302359', phone);
+    data.append('entry.839337160',  energy);
+    data.append('entry.1045781291', msg);
+    fetch(formUrl, { method:'POST', body:data, mode:'no-cors' }).catch(()=>{});
+
+    // Mostrar mensaje de éxito
+    document.getElementById('formContent').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+
+  /* ══ INIT ══ */
+  window.addEventListener('load', function () {
     applyLang('de');
   });
 </script>
