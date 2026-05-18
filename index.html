@@ -1351,7 +1351,7 @@
     requestAnimationFrame(update);
   }
 
- /* ══ FORMULARIO ══ */
+/* ══ FORMULARIO ══ */
   function submitForm() {
     const fname  = document.getElementById('fname').value.trim();
     const lname  = document.getElementById('lname').value.trim();
@@ -1370,12 +1370,10 @@
       return;
     }
 
-    fetch('https://formsubmit.co/markus.sparenergiede@gmail.com', {
+    fetch('https://script.google.com/macros/s/AKfycbxOr8sN4pfWBjlKmIM3buYJFdK5DlNhwQnAbQQC1bYj62Vu0XlnUrnhBs3DHKIJEsL9eA/exec', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         Vorname: fname,
         Nachname: lname,
@@ -1385,13 +1383,9 @@
         Nachricht: msg
       })
     })
-    .then(response => {
-      if (response.ok) {
-        document.getElementById('formContent').style.display = 'none';
-        document.getElementById('formSuccess').style.display = 'block';
-      } else {
-        alert('Fehler beim Senden. Bitte versuchen Sie es erneut.');
-      }
+    .then(() => {
+      document.getElementById('formContent').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
     })
     .catch(() => {
       alert('Fehler beim Senden. Bitte versuchen Sie es erneut.');
