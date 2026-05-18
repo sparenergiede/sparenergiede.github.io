@@ -1351,7 +1351,7 @@
     requestAnimationFrame(update);
   }
 
-  /* ══ FORMULARIO ══ */
+ /* ══ FORMULARIO ══ */
   function submitForm() {
     const fname  = document.getElementById('fname').value.trim();
     const lname  = document.getElementById('lname').value.trim();
@@ -1370,45 +1370,38 @@
       return;
     }
 
-    const FORM_ID = '1FAIpQLScCftUG_bhGznMWRN6llgW6jft49b_RU0GOOybKnkDH3muguw';
-    const f = document.createElement('form');
-    f.method = 'POST';
-    f.action = `https://docs.google.com/forms/d/e/${FORM_ID}/formResponse`;
-    f.target = 'hidden_iframe';
-
-    const fields = {
-      'entry.2005620554': fname,
-      'entry.139305699':  lname,
-      'entry.1181565411': email,
-      'entry.1886302359': phone,
-      'entry.839337160':  energy,
-      'entry.1045781291': msg
-    };
-
-    Object.entries(fields).forEach(([name, value]) => {
-      const input = document.createElement('input');
-      input.type = 'hidden';
-      input.name = name;
-      input.value = value;
-      f.appendChild(input);
+    fetch('https://formsubmit.co/ajax/markus.hadelko@teleson-vetrieb.de,markus.sparenergiede@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        Vorname: fname,
+        Nachname: lname,
+        Email: email,
+        Telefon: phone,
+        Energietyp: energy,
+        Nachricht: msg
+      })
+    })
+    .then(response => {
+      if (response.ok) {
+        document.getElementById('formContent').style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+      } else {
+        alert('Fehler beim Senden. Bitte versuchen Sie es erneut.');
+      }
+    })
+    .catch(() => {
+      alert('Fehler beim Senden. Bitte versuchen Sie es erneut.');
     });
-
-    document.body.appendChild(f);
-    f.submit();
-    setTimeout(() => {
-      document.body.removeChild(f);
-    }, 100);
-
-    document.getElementById('formContent').style.display = 'none';
-    document.getElementById('formSuccess').style.display = 'block';
   }
-
+  
   /* ══ INIT ══ */
   window.addEventListener('load', function () {
     applyLang('de');
   });
 </script>
-
-<iframe name="hidden_iframe" style="display:none;"></iframe>
 </body>
 </html>
