@@ -54,7 +54,7 @@
     "description": "Kostenloser und unverbindlicher Energietarifvergleich für Strom und Gas in Deutschland. Persönliche Beratung auf Deutsch, Englisch und Spanisch.",
     "url": "https://sparenergie.de",
     "telephone": "+4917623395458",
-    "email": "markus.hadelko@teleson-vetrieb.de",
+    "email": "markus.hadelko@teleson-vertrieb.de",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Emmendingen",
@@ -1179,7 +1179,7 @@
                 placeholder="z.B.: Verbrauch ca. 3.500 kWh/Jahr, PLZ 79312 …"></textarea>
             </div>
 
-            <button type="button" class="form-submit-btn" onclick="submitForm()">
+            <button type="button" class="form-submit-btn" id="submitBtn" onclick="submitForm()">
               <i class="fa-solid fa-paper-plane"></i>
               <span id="lbl-submit">Kostenlos anfragen</span>
             </button>
@@ -1232,9 +1232,9 @@
           <div class="bio-title" data-lang="de">Unabhängiger Energieberater · Deutschland</div>
           <div class="bio-title" data-lang="en">Independent Energy Advisor · Germany</div>
           <div class="bio-title" data-lang="es">Asesor Energético Independiente · Alemania</div>
-          <p class="bio-text" data-lang="de">Markus ist Diplom-Volkswirt und offizieller Partner von TeleSon Vertriebs GmbH. Mit langjähriger Erfahrung in Kostenoptimierung hilft er Privatpersonen und Familien deutschlandweit, unnötige Energiekosten zu vermeiden und den richtigen Tarif zu finden.</p>
-          <p class="bio-text" data-lang="en">Markus holds a degree in Economics (Diplom-Volkswirt) and is an official TeleSon partner. With years of experience in cost optimisation, he helps individuals and families across Germany avoid unnecessary energy costs and find the right plan.</p>
-          <p class="bio-text" data-lang="es">Markus es Diplom-Volkswirt (economista titulado) y socio oficial de TeleSon Vertriebs GmbH. Con amplia experiencia en optimización de costes, ayuda a particulares y familias en toda Alemania a evitar gastos innecesarios en luz y gas y a encontrar la tarifa correcta.</p>
+          <p class="bio-text" data-lang="de">Markus ist Diplom-Volkswirt und offizieller Partner von TeleSon Vertriebs GmbH. Mit langjähriger Erfahrung in Kostenoptimierung hilft er Privatpersonen, Familien und Unternehmen deutschlandweit, unnötige Energiekosten zu vermeiden und den richtigen Tarif zu finden.</p>
+          <p class="bio-text" data-lang="en">Markus holds a degree in Economics (Diplom-Volkswirt) and is an official TeleSon partner. With years of experience in cost optimisation, he helps individuals, families and businesses across Germany avoid unnecessary energy costs and find the right plan.</p>
+          <p class="bio-text" data-lang="es">Markus es Diplom-Volkswirt (economista titulado) y socio oficial de TeleSon Vertriebs GmbH. Con amplia experiencia en optimización de costes, ayuda a particulares, familias y empresas en toda Alemania a evitar gastos innecesarios en luz y gas y a encontrar la tarifa correcta.</p>
           <div class="bio-tags">
             <span class="bio-tag"><i class="fa-solid fa-graduation-cap"></i> Diplom-Volkswirt</span>
             <span class="bio-tag"><i class="fa-solid fa-briefcase"></i> TeleSon Partner</span>
@@ -1380,6 +1380,8 @@
       return;
     }
 
+    document.getElementById('submitBtn').disabled = true;
+    document.getElementById('lbl-submit').textContent = '⏳ Wird gesendet…';
     fetch('https://script.google.com/macros/s/AKfycbxOr8sN4pfWBjlKmIM3buYJFdK5DlNhwQnAbQQC1bYj62Vu0XlnUrnhBs3DHKIJEsL9eA/exec', {
       method: 'POST',
       mode: 'no-cors',
