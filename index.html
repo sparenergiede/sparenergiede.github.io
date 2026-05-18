@@ -1395,7 +1395,9 @@
 
     document.body.appendChild(f);
     f.submit();
-    document.body.removeChild(f);
+    setTimeout(() => {
+      document.body.removeChild(f);
+    }, 100);
 
     document.getElementById('formContent').style.display = 'none';
     document.getElementById('formSuccess').style.display = 'block';
